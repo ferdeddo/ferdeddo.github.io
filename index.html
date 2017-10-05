@@ -11,6 +11,9 @@
 
         <title>Google</title>
 
+     <link rel="stylesheet" href="http://www.google.com/cse/style/look/minimalist.css" type="text/css" />
+
+
     </head> 
        <header>
          
@@ -29,7 +32,7 @@
 
     <body>
          
-       <section>
+       <section id="affich" style="display: none;">
             
          <div class="imag">
             <img  src="images/googlelogo.png" alt="logo acceuil."/> <br />
@@ -37,9 +40,11 @@
 
          </div>
              <var class="rech">
-             <input type="search" size="70px" /> <br /><br /><br />
-             <input value="Recherche Google"  type="submit">
+                
+             <input id = barre type="search" size="55"  /> <br /><br /><br />
+             <input id = recherche value="Recherche Google"  type="submit" onClick="redirection">
              <input value="J'ai de la chance" type="submit">
+
              </var>
        </section>
 
@@ -64,13 +69,12 @@
     </nav>
   
 
-          
-
-
-
 
 
       </footer>
+    <input id="bouton" type="button" value="AFFICHER LES ÉLÉMENTS CENTRAUX" onClick="AfficherMasquer()"  />
+</body>
+    <script src="scripts/main.js"></script>
     </body>
 
 </html>
